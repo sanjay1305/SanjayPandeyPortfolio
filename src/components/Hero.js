@@ -47,6 +47,15 @@ export function Hero() {
         h('div', { className: 'profile-orb', 'aria-hidden': 'true' }),
         h(
           'div',
+          { className: 'profile-image-frame' },
+          h('img', {
+            className: 'profile-image',
+            src: './pic.png',
+            alt: 'Profile picture of Sanjay Pandey',
+          }),
+        ),
+        h(
+          'div',
           { className: 'profile-copy' },
           h('p', { className: 'panel-label' }, 'Currently focused on'),
           h('h2', null, 'Building scalable services that are clean, stable, and easy to operate.'),

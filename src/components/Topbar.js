@@ -7,7 +7,15 @@ export function Topbar() {
     h(
       'div',
       { className: 'brand' },
-      h('span', { className: 'brand-mark', 'aria-hidden': 'true' }, 'SP'),
+      h(
+        'div',
+        { className: 'brand-mark', 'aria-hidden': 'true' },
+        h('img', {
+          className: 'brand-image',
+          src: './pic.png',
+          alt: '',
+        }),
+      ),
       h(
         'div',
         null,
