@@ -1,6 +1,6 @@
 import { h } from '../lib/createElement.js';
 
-export function Topbar() {
+export function InterviewPrepHeader() {
   return h(
     'header',
     { className: 'topbar' },
@@ -19,21 +19,18 @@ export function Topbar() {
       h(
         'div',
         null,
-        h('p', { className: 'eyebrow' }, 'Portfolio'),
+        h('p', { className: 'eyebrow' }, 'Interview Prep'),
         h('p', { className: 'brand-name' }, 'Sanjay Pandey'),
       ),
     ),
     h(
       'nav',
       { className: 'nav' },
-      h('a', { href: '#about' }, 'About'),
-      h('a', { href: '#skills' }, 'Skills'),
-      h('a', { href: '#projects' }, 'Projects'),
-      h('a', { href: '#experience' }, 'Experience'),
-      h('a', { href: '#register' }, 'Register'),
-      h('a', { href: '#calendar' }, 'Calendar'),
-      h('a', { href: './interview-prep.html' }, 'Interview Prep'),
-      h('a', { href: '#contact' }, 'Contact'),
+      h('a', { href: './index.html' }, 'Portfolio'),
+      h('a', { href: '#topic-index' }, 'Topics'),
+      h('a', { href: '#system-design-basics' }, 'System Design'),
+      h('a', { href: '#llm-foundations' }, 'LLM'),
     ),
   );
 }
+
